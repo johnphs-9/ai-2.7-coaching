@@ -1,43 +1,25 @@
-# Lesson Repo Template
+# 2.7 Coaching Session: Refactoring the Guess Game with useReducer and useContext
 
-Template for creating lesson repositories under **su-ntu-sctp**.
+## Session Overview
 
-## Naming (Option A)
-`5/3m-<track>-<module>.<lesson>-<topic-slug>`  
-**Examples**
-`5/3m-ai-3.1-java-intro`
+This coaching session gives learners hands-on practice applying `useReducer` and the Context API to a problem they already know. The first 30 minutes are open Q&A on anything from Lessons 2.5 and 2.6. Learners then spend approximately two hours working through a structured two-part activity: first refactoring the Guess Game from Coaching 2.4 to use a reducer, then lifting the score history into a shared context. The session closes with two learner presentations followed by an instructor walkthrough.
 
-## Naming (Option B) 
+## Dependencies
 
-`<track>-<module>.<lesson>-<topic-slug>`
+- [Activity Brief](./lesson.md)
 
-**Examples**
-`ai-3.1-java-intro`
+## Session Objectives
 
+- Refactor existing `useState` logic into a `useReducer` to centralise game state and update logic
+- Create a React Context to share score history across components without prop drilling
+- Connect reducer-managed state to a context using `useEffect` to trigger side effects at the right time
 
-## Structure
-```text
-.
-├─ README.md
-├─ lesson.md
-├─ assignment.md
-├─ quiz.md
-├─ studies.md
-├─ slides/
-│  └─ placeholder.txt
-├─ assets/
-│  ├─ images/
-│  └─ data/
-└─ .gitignore
-```
+## Session Plan
 
-
-## Use This Template
-1) Click **Use this template → Create new repository**  
-2) Name it using the convention above  
-3) Clone, edit files, commit, push
-
-## Notes
-- Put slides in `slides/` (pptx/pdf)  
-- Images in `assets/images/`, data in `assets/data/`  
-- Each file contains its own authoring instructions (open and follow the checklists inside)
+| Duration  | What              | How or Why                                                                                                   |
+| --------- | ----------------- | ------------------------------------------------------------------------------------------------------------ |
+| 30 min    | Q&A               | Open floor for questions on Lessons 2.5 and 2.6; instructor addresses common misconceptions                  |
+| 10 min    | Activity briefing | Instructor reads through the two parts and explains how the reducer score feeds into the context             |
+| ~110 min  | Guided activity   | Learners work through Parts A and B with hints and reference solutions available; instructor circulates       |
+| 30 min    | Debrief           | Two learners present their solutions; instructor walks through the reference solution                        |
+| **Total** |                   | **~180 min**                                                                                                 |
